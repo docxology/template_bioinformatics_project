@@ -1,22 +1,7 @@
-# AGENTS.md — docs/ (Bioinformatics Project Template)
+# AGENTS.md — `template_bioinformatics_project/docs`
 
-## Layout
-
-- `README.md` — human entry point (what this repo is, directory map, run/test)
-- `AGENTS.md` — this file: conventions for maintaining docs/
-
-## Repo conventions observed
-
-- `data/raw/` is strictly read-only; derived data goes to
-  `data/processed/` (from `../README.md`).
-- Configuration (input bounds, thresholds, logging) lives in
-  `config/default.yaml` — no hardcoding into scripts.
-- Scripts log execution state into `logs/` for traceability.
-- This checkout is a simplified scaffold (config, data, scripts, results,
-  logs, requirements.txt) — it does not carry the monorepo's
-  `src/`/`tests/`/`manuscript/` layout.
-
-## Maintaining these docs
-
-Keep both files short (30–80 lines), factual, and derived only from repo
-files. Update the directory map when top-level layout changes.
+Documentation tree. Only child: `manuscript/`, holding
+`MANUSCRIPT_STATUS.md`, which records (verified 2026-08-29) that this repo
+is a scaffold with no publication manuscript and what would trigger
+creating one. Local-only under `projects/ongoing/` — never commit; see
+`/Volumes/external_drive/Git/template/projects/ongoing/AGENTS.md`.
