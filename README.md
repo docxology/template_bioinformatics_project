@@ -7,7 +7,7 @@ It ensures reproducibility, clear separation of data and code, and organized tra
 
 This boilerplate provides everything you need to start a data-processing pipeline.
 
-1. **Environment Setup**
+1. **Environment Setup** (requires Python 3.11 or newer; the `snakemake>=8` floor sets this)
     ```bash
     python3 -m venv .venv
     source .venv/bin/activate
@@ -18,11 +18,13 @@ This boilerplate provides everything you need to start a data-processing pipelin
    Open `config/default.yaml` to define your input bounds, thresholds, and logging formatting without hardcoding variables into scripts.
 
 3. **Execution**
-   A standard entrypoint script is provided:
+   Run the standard entrypoint from the repository root (`--config` is resolved relative to the current directory):
     ```bash
     python scripts/01_process_data.py --config config/default.yaml
     ```
    This script will read from `data/raw/` and establish its log tracking in `logs/`.
+
+   No `Snakefile` ships with the scaffold — `snakemake` is declared in `requirements.txt` for pipelines you add. There is no automated test suite; the entrypoint script is the smoke check.
 
 ## Directory Structure
 

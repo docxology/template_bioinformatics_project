@@ -1,6 +1,6 @@
 # AGENTS.md — `template_bioinformatics_project`
 
-> Verified against disk 2026-08-29. Agent notes for the bioinformatics
+> Verified against disk 2026-10-26. Agent notes for the bioinformatics
 > project-scaffold repo. Repo-wide policy: see
 > `/Volumes/external_drive/Git/template/projects/ongoing/AGENTS.md`.
 
@@ -11,7 +11,7 @@ projects (not a research project with its own findings): reproducibility
 conventions, immutable raw data, config-driven processing, and log
 traceability. See root `README.md` for the human-facing quickstart.
 
-## Layout map (verified 2026-08-29)
+## Layout map (verified 2026-10-26)
 
 - `config/` — `default.yaml`: path routing (`data/raw/`, `data/processed/`,
   `results/`, `logs/`), processing params (threads, filtering_threshold,
@@ -21,6 +21,7 @@ traceability. See root `README.md` for the human-facing quickstart.
 - `scripts/` — `01_process_data.py`: example entrypoint reading
   `data/raw/` -> writing `data/processed/`, YAML-config-driven, logging to
   `logs/01_process_data.log`.
+- `notebooks/` — EDA/visualization notebooks. Currently `.gitkeep` only.
 - `results/` — final formatted outputs (tables, figures). Currently empty.
 - `logs/` — execution logs. Currently empty.
 - `docs/manuscript/` — `MANUSCRIPT_STATUS.md`: documents why this repo has
@@ -43,12 +44,12 @@ traceability. See root `README.md` for the human-facing quickstart.
 
 ## Gotchas
 
-- Snakemake is in `requirements.txt` but **no Snakefile exists** in this
-  checkout (unverified whether one is intended upstream).
-- `notebooks/` is described in the README's directory-structure section but
-  **does not exist on disk** — create it when needed for EDA work.
+- Snakemake is in `requirements.txt` (`>=8.0.0`) but **no Snakefile exists**
+  in this checkout — the dep is a starter for pipelines added downstream,
+  not a wired-up workflow.
 - Entry point: `python scripts/01_process_data.py --config config/default.yaml`
-  (unverified — not run during this doc pass).
+  run from the repo root — **executed 2026-10-26**: exit 0, wrote
+  `logs/01_process_data.log` (needs only `pyyaml`).
 
 ## Verify
 

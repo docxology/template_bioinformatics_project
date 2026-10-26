@@ -4,9 +4,10 @@
 scaffold for bioinformatics data-processing projects — see root
 `README.md`).
 
-**Evidence checked (2026-08-29):** root `README.md` (Quickstart, directory
-structure, reproducibility principles), `requirements.txt`, `config/`,
-`scripts/`, `results/`, `logs/`. No analysis outputs, figures, or
+**Evidence checked (2026-10-26):** root `README.md` (Quickstart, directory
+structure, reproducibility principles), `requirements.txt` (dependency
+floors refreshed 2026-10-26), `config/`, `scripts/` (entry point executed),
+`results/`, `logs/`. No analysis outputs, figures, or
 publication-target research content exist in this checkout; no
 `manuscript/` directory exists at repo top level.
 

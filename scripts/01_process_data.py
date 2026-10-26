@@ -7,7 +7,6 @@ This script demonstrates standard practices:
 3. Reading from `data/raw/` and writing to `data/processed/`.
 """
 
-import os
 import sys
 import yaml
 import logging
