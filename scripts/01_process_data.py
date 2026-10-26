@@ -4,7 +4,9 @@ Example data processing script for the Bioinformatics Project Template.
 This script demonstrates standard practices:
 1. Loading configuration from YAML.
 2. Setting up standard logging output to the `logs/` directory.
-3. Reading from `data/raw/` and writing to `data/processed/`.
+3. Resolving the `data/raw/` -> `data/processed/` routing and creating
+   those directories. Processing itself is a stub (`process_data`) that
+   logs only — no files are read or written yet.
 """
 
 import sys

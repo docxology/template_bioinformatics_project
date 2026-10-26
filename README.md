@@ -22,7 +22,7 @@ This boilerplate provides everything you need to start a data-processing pipelin
     ```bash
     python scripts/01_process_data.py --config config/default.yaml
     ```
-   This script will read from `data/raw/` and establish its log tracking in `logs/`.
+   The script resolves the `data/raw/` -> `data/processed/` routing from the config, creates those directories, and writes its run log to `logs/01_process_data.log`. The processing step itself is a stub to replace; no files are read or written yet.
 
    No `Snakefile` ships with the scaffold — `snakemake` is declared in `requirements.txt` for pipelines you add. There is no automated test suite; the entrypoint script is the smoke check.
 
