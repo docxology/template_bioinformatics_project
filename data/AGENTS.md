@@ -1,8 +1,9 @@
 # AGENTS.md — `template_bioinformatics_project/data`
 
-Data root for the bioinformatics scaffold. `raw/` is **immutable** input
-data (never modified by scripts); `processed/` holds cleansed intermediates
-derived from `raw/`. Both subfolders are **currently empty** in this
-checkout (verified 2026-08-29). Invariants: raw is read-only; processed is
-regenerable. Local-only under `projects/ongoing/` — never commit; see
-`/Volumes/external_drive/Git/template/projects/ongoing/AGENTS.md`.
+Follow the repository-root `AGENTS.md`. `raw/` holds immutable inputs:
+never create, modify, or remove user data during scaffold validation.
+`processed/` is reserved for downstream derived data; the current stub
+creates the directory but writes no data files. Both directories ship only
+tracked `.gitkeep` placeholders; ignored local data may still be present.
+Use temporary fixtures as described in the root README, not repository raw
+data. Do not treat ignored or regenerable files as authorized cleanup.

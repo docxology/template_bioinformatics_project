@@ -1,9 +1,7 @@
 # AGENTS.md — `template_bioinformatics_project/docs/manuscript`
 
-Contains only `MANUSCRIPT_STATUS.md` (verified 2026-08-29): documents that
-this scaffold repo has no publication-target manuscript, and that a
-manuscript belongs to any instantiated project using this scaffold, not to
-the template. If a real manuscript is ever created here, follow the
-docxology/template exemplar standard (SECTION files, config.yaml,
-references.bib). Local-only — never commit; see
-`/Volumes/external_drive/Git/template/projects/ongoing/AGENTS.md`.
+Follow the repository-root and parent `AGENTS.md` files.
+`MANUSCRIPT_STATUS.md` documents why this scaffold has no publication-target
+manuscript. Research manuscripts belong in instantiated downstream projects.
+The docxology/template manuscript layout is an optional downstream choice,
+not an installed SDK integration or a requirement to convert this scaffold.

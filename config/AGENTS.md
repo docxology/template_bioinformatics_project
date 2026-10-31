@@ -1,10 +1,12 @@
 # AGENTS.md — `template_bioinformatics_project/config`
 
-Pipeline configuration for the bioinformatics scaffold. Contains
-`default.yaml` only: `import_path` (path routing for raw/processed data,
-results, logs), `processing` (threads: 4, filtering_threshold: 10.0,
-normalize: true), `logging` (level INFO, standard format string).
-Verified 2026-08-29. Local-only path under `projects/ongoing/` — never
-commit; see `/Volumes/external_drive/Git/template/projects/ongoing/AGENTS.md`.
-Gotcha: scripts read this file by relative path
-(`--config config/default.yaml`), so run from the repo root.
+Follow the repository-root `AGENTS.md`. `default.yaml` defines path routing,
+processing placeholders, and active logging settings. All relative paths,
+including `--config`, resolve against the working directory, not the YAML
+file's directory. The raw directory must already exist; configure output
+and log paths outside raw data.
+
+The stub logs `filtering_threshold` but does not apply it. `threads`,
+`normalize`, `results`, and `import_path.config` are reserved, unused fields.
+Do not claim processing behavior from their presence. Validate configuration
+changes using the root README's temporary-fixture smoke workflow.

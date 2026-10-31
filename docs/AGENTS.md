@@ -1,7 +1,6 @@
 # AGENTS.md — `template_bioinformatics_project/docs`
 
-Documentation tree. Only child: `manuscript/`, holding
-`MANUSCRIPT_STATUS.md`, which records (verified 2026-08-29) that this repo
-is a scaffold with no publication manuscript and what would trigger
-creating one. Local-only under `projects/ongoing/` — never commit; see
-`/Volumes/external_drive/Git/template/projects/ongoing/AGENTS.md`.
+Follow the repository-root `AGENTS.md`. `manuscript/MANUSCRIPT_STATUS.md`
+explains why this scaffold has no publication manuscript. Keep documentation
+aligned with the shipped stub, distinguish historical observations from
+current evidence, and do not claim scientific or SDK qualification.

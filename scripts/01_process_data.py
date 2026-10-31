@@ -4,9 +4,9 @@ Example data processing script for the Bioinformatics Project Template.
 This script demonstrates standard practices:
 1. Loading configuration from YAML.
 2. Setting up standard logging output to the `logs/` directory.
-3. Resolving the `data/raw/` -> `data/processed/` routing and creating
-   those directories. Processing itself is a stub (`process_data`) that
-   logs only — no files are read or written yet.
+3. Checking the raw input directory and creating the processed directory.
+   Processing itself is a stub (`process_data`) that logs only — no data
+   files are read or written.
 """
 
 import sys
@@ -43,19 +43,19 @@ def process_data(config, logger):
     raw_dir = Path(config['import_path']['data_raw'])
     processed_dir = Path(config['import_path']['data_processed'])
     
-    raw_dir.mkdir(parents=True, exist_ok=True)
+    if not raw_dir.is_dir():
+        raise FileNotFoundError(f"Raw data directory does not exist: {raw_dir}")
     processed_dir.mkdir(parents=True, exist_ok=True)
     
-    logger.info(f"Scanning raw data directory: {raw_dir}")
+    logger.info(f"Raw data directory: {raw_dir}")
     logger.info(f"Filtering threshold set to: {config['processing']['filtering_threshold']}")
     logger.info(f"Targeting processed directory: {processed_dir}")
     
-    # Example logic: just log that we would process files
-    logger.info("Data processing complete.")
+    logger.info("Scaffold smoke complete; no data files were read or processed.")
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Process raw biological data.")
+    parser = argparse.ArgumentParser(description="Smoke-check the bioinformatics scaffold (no data processing).")
     parser.add_argument('--config', type=str, default='config/default.yaml',
                         help='Path to the configuration file.')
     args = parser.parse_args()
