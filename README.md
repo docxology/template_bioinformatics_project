@@ -105,3 +105,7 @@ Strict adherence to the directory structure preserves project integrity:
 1. **No Hardcoding**: All paths and thresholds should route dynamically through `config/` files.
 2. **Immutability**: Anything inside `data/raw` must never be modified by a script. Generate altered states into `data/processed`.
 3. **Traceability**: All scripts should utilize the standard Python `logging` library mapping `.log` files securely into `logs/`.
+
+## License
+
+Released under the [MIT License](LICENSE).
