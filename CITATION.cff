@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+title: "template_bioinformatics_project"
+authors:
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+repository-code: "https://github.com/docxology/template_bioinformatics_project"
+abstract: "Boilerplate scaffold for reproducible bioinformatics projects: enforced directory layout separating immutable raw data, processed intermediates, scripts, notebooks, results and logs, with YAML-driven configuration, Python virtualenv setup and standard logging instead of hardcoded parameters."
+license: MIT
