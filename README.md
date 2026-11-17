@@ -3,6 +3,8 @@
 This repository serves as a **standard template** for organizing bioinformatics projects.
 It provides conventions for reproducibility, separation of data and code, and tracking outputs and execution parameters. The shipped processing function is a **stub**, not a biological analysis pipeline.
 
+![Bioinformatics project scaffold architecture: YAML configuration routing, CLI stub entrypoint, immutable raw input boundary, processed output directory, and execution log trace](docs/assets/architecture-overview.svg)
+
 ## Architecture and support boundary
 
 This is an independently authored scaffold, **not one of the canonical
