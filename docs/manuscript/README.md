@@ -1,6 +1,11 @@
-# manuscript
+# Scaffold technical note
 
-Manuscript status documentation for the bioinformatics scaffold. See
-`MANUSCRIPT_STATUS.md`: no publication manuscript exists or belongs here
-while the repo remains a template. Part of
-`template_bioinformatics_project`.
+The note documents the shipped directory and logging workflow. Read the
+[abstract](00_abstract.md), [layout](01_layout.md),
+[verification](02_verification.md), [limits](03_limits.md), and
+[references](99_references.md) in order.
+
+[Configuration](config.yaml), [preamble](preamble.md),
+[bibliography](references.bib), and [figure metadata](figure_registry.json)
+are the inputs to the [external render recipe](../rendering.md). The note
+describes the software scaffold and its temporary smoke fixture.

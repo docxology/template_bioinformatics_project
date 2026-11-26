@@ -9,4 +9,4 @@ and log paths outside raw data.
 The stub logs `filtering_threshold` but does not apply it. `threads`,
 `normalize`, `results`, and `import_path.config` are reserved, unused fields.
 Do not claim processing behavior from their presence. Validate configuration
-changes using the root README's temporary-fixture smoke workflow.
+changes using the [temporary smoke workflow](../docs/development.md#smoke-workflow).

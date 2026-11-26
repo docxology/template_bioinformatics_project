@@ -6,7 +6,7 @@ existing raw directory, creates the processed directory, and appends a log.
 It does not read or write data files or implement biological processing.
 
 Relative config and data paths resolve against the working directory.
-Use the root README's temporary-fixture smoke workflow; verify raw bytes
+Use the [temporary smoke workflow](../docs/development.md#smoke-workflow); verify raw bytes
 are unchanged and no processed data is produced. Keep success messages
 explicit about the stub boundary. Number downstream scripts `NN_name.py`;
 their scientific methods require separate validation.
