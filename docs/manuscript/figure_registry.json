@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.0",
+  "figures": [
+    {
+      "label": "fig:scaffold-layout",
+      "filename": "architecture-overview.png",
+      "caption": "Directory checks and log routing in the shipped scaffold.",
+      "alt_text": "YAML configures the CLI, which checks the raw directory, creates the processed directory, and appends a run log.",
+      "source_markdown": "01_layout.md"
+    }
+  ]
+}

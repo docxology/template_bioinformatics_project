@@ -1,0 +1,30 @@
+paper:
+  title: "A Reproducible Directory and CLI Scaffold"
+  subtitle: "Configuration, Immutable Inputs, and Run Logs"
+  description: "A technical note documenting the directory and logging contract of the shipped scaffold."
+
+authors:
+  - name: "Daniel Ari Friedman"
+    orcid: "0000-0001-6232-9096"
+
+publication:
+  github_repository: docxology/template_bioinformatics_project
+  repository_url: https://github.com/docxology/template_bioinformatics_project
+
+keywords:
+  - reproducibility
+  - data custody
+  - configuration
+  - logging
+
+metadata:
+  language: en-US
+  license: MIT
+
+render:
+  formats:
+    pdf: true
+    html: true
+    docx: false
+    epub: false
+    slides: false

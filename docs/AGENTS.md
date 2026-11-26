@@ -1,6 +1,5 @@
-# AGENTS.md — `template_bioinformatics_project/docs`
+# Documentation guidance
 
-Follow the repository-root `AGENTS.md`. `manuscript/MANUSCRIPT_STATUS.md`
-explains why this scaffold has no publication manuscript. Keep documentation
-aligned with the shipped stub, distinguish historical observations from
-current evidence, and do not claim scientific or SDK qualification.
+Follow the [repository guidance](../AGENTS.md). Keep the guides and technical
+note aligned with the shipped stub. Describe observations from temporary
+fixtures as checks of configuration and file routing.
