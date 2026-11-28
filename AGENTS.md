@@ -5,8 +5,8 @@
 This public repository is an independently authored organizational scaffold,
 not a scientific pipeline or one of the canonical `docxology/template` SDK
 exemplars. It has no SDK dependency, SDK version contract, `pyproject.toml`,
-package API, automated test suite, or built-in manuscript renderer. Do
-not impose the root template's 4.5.0 version or replace this scaffold with
+package API, automated test suite, or built-in manuscript renderer. The scaffold's
+version is independent of the Template SDK. Do not replace this scaffold with
 an exemplar. See [setup and verification](docs/development.md) for the executable smoke check.
 
 ## Source map
